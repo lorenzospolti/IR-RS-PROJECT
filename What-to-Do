@@ -1,0 +1,34 @@
+You may ask, why three indices? 
+
+It is easier to analyze how every unique component works, plus you don't fuck up with the IDF (inverse document frequency).
+We are dealing with 3 different types of signals (mainly 2 to be onest), we want to divide and conquer, and we are going to do the right way.
+They might be week all alone, they might be scared, but when fused they might compensate each others, because the success of one might be the failures of another.
+
+I failed many times in my life, rarely tasks. I always failed myself. Too scared to act, or even worse to take responsability of said action. It is easy to lift up the rock
+and move your hand away when the hands come. It is easy to start anew. It is easy to die, in order to forget about the rock that we throw toward the sky, and that by will of the spirit of gravity will fall on our head.
+I am scared of time, to stay still and loose potential. It haunts my dream every night, the demon of the man I will never be, the one that rots as the days go by. 
+He's the one that yet has to come, but will never bem because he lives in the future. He's a call that cannot be answered, because its realization would be its end.
+
+I used to live without path, because I am able to do anything, because this strenght made me too weak too choose.
+But tonight I made a choice, Conquest.
+
+
+
+
+
+
+What we need to do is compare the performance (on BM25, or in general the same statistical model) on various index fields, which would be N-grams, Context with corrections and the original context. I don't think it makes much sense
+to use entities as a field, because those get's weighted in the query, it would be redundant (maybe it might help strenghten RM3, if used). 
+Then we would fuse those results, and add the Query reweighting module, then possibly RM3. 
+Another interesting trials would be to use documents as queries and viceversa, there should be a paper out there about that, but it is not the moment.
+
+Useful Things To DO:
+-Fix N-grams : now they are (Tripoli -> Tri rip ipo pol oli li i) while I would like to make them of N exact characters, because having them producing smaller n-grams would impact performance negatevely by creating a lot of fake positives
+(a monogram - bigram is very common)
+
+-fix spelling collection (something do not adds up there, there is almost no improvement in performance, let's work on there), also it would be nice to find a way to extrat synonims, maybe rule-based since pseudo-relevance
+feedback is not reliable (query-drift)
+
+-entities (the model I used sucks).
+
+-Having lovely time during holidays: do not stress out, we already Won.
